@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Verizon Regression Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Verizon Functional Regression Test">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.verizon.test.MainPageTest"/>
+      <class name="com.qa.verizon.test.SmartphonePageTest"/>
+      <class name="com.qa.verizon.test.SmartPhoneFeaturePageTest"/>
+      <class name="com.qa.verizon.test.ShoppingCartPageTest"/>
+    </classes>
+  </test> <!-- Verizon Functional Regression Test -->
+  <test name="Verizon Functional Regression Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.verizon.test.SmartPhoneFeaturePageTest">
+        <methods>
+          <include name="makeItWork"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.verizon.test.SmartPhoneFeaturePageTest -->
+      <class name="com.qa.verizon.test.SmartphonePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.verizon.test.SmartphonePageTest -->
+      <class name="com.qa.verizon.test.ShoppingCartPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.verizon.test.ShoppingCartPageTest -->
+      <class name="com.qa.verizon.test.MainPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.verizon.test.MainPageTest -->
+    </classes>
+  </test> <!-- Verizon Functional Regression Test(failed) -->
+</suite> <!-- Failed suite [Verizon Regression Suite] -->

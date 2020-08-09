@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Verizon Regression Suite">
+
+  <test name="Verizon Functional Regression Test">
+  <parameter name = "browser" value ="chrome"/>
+    <classes>
+      <class name="com.qa.verizon.test.MainPageTest"/>
+      <class name="com.qa.verizon.test.SmartphonePageTest"/>
+      <class name="com.qa.verizon.test.SmartPhoneFeaturePageTest"/>
+      <class name="com.qa.verizon.test.ShoppingCartPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
